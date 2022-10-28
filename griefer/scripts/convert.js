@@ -8,7 +8,7 @@ const data = JSON.parse(fs.readFileSync(path.join('..', 'db.json'), 'utf-8'));
     const oldData = await (await fetch("https://raw.githubusercontent.com/InstallHappiness/LOGrieferList/main/index.json")).json()
     for (const uuid in oldData) {
         const userData = oldData[uuid]
-        const idWithoutDashes = (await toUuid(oldData.lastKnownName)).id
+        const idWithoutDashes = (await toUuid(userData.lastKnownName)).id
         data[uuid] = {
             lastName: userData.lastKnownName,
             idWithoutDashes: idWithoutDashes
