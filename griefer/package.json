@@ -1,0 +1,12 @@
+{
+  "name": "lo-griefer",
+  "version": "1.0.0",
+  "description": "A subproject of LO-Utils",
+  "main": "add.js",
+  "repository": "https://github.com/ZeoNight/LO-Utils",
+  "author": "ZeoNight",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "node-fetch": "2"
+  }
+}
